@@ -1,0 +1,48 @@
+:root {
+  --background-color-day: #ffffff;
+  --text-color-day: #000000;
+  --background-color-night: #2c3e50;
+  --text-color-night: #ecf0f1;
+}
+
+body {
+  background-color: var(--background-color-day);
+  color: var(--text-color-day);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button i {
+  font-size: 18px;
+}
+
+button.day-mode {
+  background-color: var(--text-color-night);
+  color: var(--background-color-night);
+}
+
+button.night-mode {
+  background-color: var(--text-color-day);
+  color: var(--background-color-day);
+}
